@@ -1,5 +1,15 @@
 # Detecção de Linhas de Plantação
 
+## Sumário
+
+- [Resumo](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#resumo);
+- [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#descrição);
+- [_Setup_](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#setup);
+- [Passos para reproduzir](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#passos-para-reproduzir);
+- [Referências Úteis](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#referências-úteis);
+- [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#cite-me);
+- [Melhorias](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#melhorias).
+
 ## Resumo
 
 Este projeto é parte de uma aplicação de visão computacional de drones para agricultura de precisão. Este repositório contém os arquivos necessários para a detecção de linhas de plantação e planejamento da trajetória de VANTs.
@@ -56,6 +66,8 @@ Basso, M., Pignaton de Freitas, E. A framework for autonomous mission and guidan
 
 Basso, M., Pignaton de Freitas, E. A UAV Guidance System Using Crop Row Detection and Line Follower Algorithms. J Intell Robot Syst *97*, 605–621 (2020). [https://doi.org/10.1007/s10846-019-01006-0](https://doi.org/10.1007/s10846-019-01006-0)
 
-## Melhoria
+## Melhorias
 
-Descreve melhorias na implementação, como por exemplo, a refatoração baseada em outras bibliotecas.
+Como enfatizado na seção [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#descrição), este repositório está incompleto, não apresentando os pacotes necessários para efetivamente ser utilizado em um drone com Raspbian Strech ou alguma versão do Ubuntu. Faltam os sistemas de movimentação dos VANTS, incorporando os códigos presentes neste repositório.
+
+Para tanto, é sugerida a incorporação de ROS2 na biblioteca, bem como a implantação de um _flight stack_, como a PX4, para facilitar e tornar mais reutilisáveis os algoritmos presentes neste repositório. Além disso, com esse novo _setup_, seria possível realizar simulações em Gazebo ou até no ambiente da Unreal Engine.
