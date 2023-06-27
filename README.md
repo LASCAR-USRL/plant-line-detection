@@ -38,6 +38,26 @@ Informações mais detalhadas sobre a aplicação como um todo encontram-se na s
 
 ## Setup
 
+### _Hardware_
+
+Na aplicação, foi utilizado o VANT 3DR Iris+ quadrotor, junto de uma câmera Raspberry Pi NOIR V1 Rev 1.3 com um filtro de gel azul para melhor filtrar as imagens das plantações, conectada com um gimbal Tarot T-2D V2. Essas partes podem ser vistas na imagem a seguir:
+
+![Drone e Câmera do Raspiberry Pi](/assets/pictures/drone_and_raspiberry_pi_camera.png)
+
+**Figura 04: VANT e Câmera do Raspiberry Pi**
+
+Foi utilizado o Raspberry Pi 3 modelo B como computador integrado, com um cartão SD classe 10 de 32 GB para armazenar o sistema operacional do microprocessador. Para garantir a alimentação e temporização do sistema, foram incorporados um conversor DC-DC e um módulo RTC. Para realizar a interface com o _hardware_ do drone, foi instalada a controladora de vôo Pixhawk Autopilot. Essa parte também é ilustrada na imagem a seguir:
+
+![Computador Integrado ao Drone](/assets/pictures/embedded_hardware_connections.png)
+
+**Figura 05: Computador Integrado ao VANT**
+
+### _Software_
+
+
+
+Informações mais detalhadas sobre a aplicação como um todo encontram-se na seção [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#cite-me).
+
 Descreve o _setup_ de _hardware_ e sofware para reprodução dos experimentos. Por exemplo, sistema operacional utilizado e versão das bibliotecas.
 
 ## Passos para reproduzir
