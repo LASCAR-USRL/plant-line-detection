@@ -10,7 +10,19 @@ Este repositório reflete apenas um módulo de um _framework_ para visão comput
 
 ![Arquitetura Geral do Software](/assets/pictures/general_software_architecture.png)
 
-Figura 01: Arquitetura Geral de Software
+**Figura 01: Arquitetura Geral de Software**
+
+O módulo abordado neste repositório é o _Crop Row Detection_ da imagem acima. Esse bloco contém as bibliotecas OpenCV e Raspicam, bem como o código de detecção, filtragem e seguidor de linhas de plantação. Além disso, para conexão com o drone, ela conta com um _encoder/decoder_ e um cliente _socket_. A imagem abaixo mostra bem essa descrição:
+
+![_Crop Row Detection Client_](/assets/pictures/crop_row_detection_client.png)
+
+**Figura 02: Cliente de Detecção de Linhas de Plantação**
+
+O algoritmo de operação desse cliente ilustrado abaixo:
+
+![_Crop Row Detection Operation Flow_](/assets/pictures/crop_row_detection_algorithm.png)
+
+**Figura 03: Fluxo de Operação do Detector de Linhas de Plantação**
 
 Informações mais detalhadas sobre a aplicação como um todo encontram-se na seção [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#cite-me).
 
@@ -22,13 +34,13 @@ Descreve o _setup_ de _hardware_ e sofware para reprodução dos experimentos. P
 
 Seguindo o [_Setup_](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#setup) e a [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/edit/master/README.md#descrição) do repositório, deve-se baixar este repositório para alguma pasta do dispositivo e abrir um terminal na pasta do projeto ou acessar essa através de comandos de um terminal. Após isso, a execução do projeto dentro de um ambiente adequado é descrita abaixo:
 
-### Compilando no _Raspbian Stretch_:
+### Compilando no Raspbian Stretch:
 	$ mkdir build
 	$ cd build
 	$ cmake ..
 	$ make
 
-### Rodando no _Raspbian Stretch_:
+### Rodando no Raspbian Stretch:
 	$ cd build
 	$ ./main
 
