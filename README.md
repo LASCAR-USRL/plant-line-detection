@@ -4,7 +4,7 @@
 
 - [Resumo](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#resumo);
 - [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#descrição);
-- [_Setup_](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#setup);
+- [Setup](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#setup);
 - [Passos para reproduzir](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#passos-para-reproduzir);
 - [Referências Úteis](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#referências-úteis);
 - [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#cite-me);
@@ -36,13 +36,13 @@ O algoritmo de operação desse cliente ilustrado abaixo:
 
 Informações mais detalhadas sobre a aplicação como um todo encontram-se na seção [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#cite-me).
 
-## _Setup_
+## Setup
 
 Descreve o _setup_ de _hardware_ e sofware para reprodução dos experimentos. Por exemplo, sistema operacional utilizado e versão das bibliotecas.
 
 ## Passos para reproduzir
 
-Seguindo o [_Setup_](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#setup) e a [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#descrição) do repositório, deve-se baixar este repositório para alguma pasta do dispositivo e abrir um terminal na pasta do projeto ou acessar essa através de comandos de um terminal. Após isso, a execução do projeto dentro de um ambiente adequado é descrita abaixo:
+Seguindo o [Setup](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#setup) e a [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#descrição) do repositório, deve-se baixar este repositório para alguma pasta do dispositivo e abrir um terminal na pasta do projeto ou acessar essa através de comandos de um terminal. Após isso, a execução do projeto dentro de um ambiente adequado é descrita abaixo:
 
 ### Compilando no Raspbian Stretch:
 	$ mkdir build
@@ -56,7 +56,10 @@ Seguindo o [_Setup_](https://github.com/LASCAR-USRL/plant-line-detection/tree/ma
 
 ## Referências Úteis
 
-Apresenta referências para compreensão de conceitos importantes para entender a solução e a implementação.
+Como este projeto utiliza a biblioteca de computação gráfica OpenCV e o _driver_ para câmeras do Raspiberry Pi chamado Raspicam, os _links_ abaixo referenciam os repositórios com as versões mais recentes de cada uma dessas dependências:
+
+- [OpenCV](https://github.com/opencv/opencv);
+- [Raspicam](https://github.com/cedricve/raspicam).
 
 ## Cite-me
 
