@@ -54,7 +54,7 @@ Foi utilizado o Raspberry Pi 3 modelo B como computador integrado, com um cartã
 
 ### _Software_
 
-
+Em relação à arquitetura de _software_, as Figuras 01, 02 e 03 do capítulo [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#descrição) ilustram bem como foi modelada esta aplicação. Não obstante, algumas descrições são devidas a essas imagens. O sistema operacional utilizado no projeto foi o Raspbian Stretch com interface GUI desabilitada para obter melhor performance. Os _drivers_ e as bibliotecas auxiliares relevantes já foram descritos brevemente junto da imagem. Vale a pena destacar que a versão da OpenCV utilizada é a 3.1.0 e para a Raspicam, uma versão customizada 0.1.6 para este projeto.
 
 Informações mais detalhadas sobre a aplicação como um todo encontram-se na seção [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#cite-me).
 
