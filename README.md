@@ -18,21 +18,24 @@ Este projeto é parte de uma aplicação de visão computacional de drones para 
 
 Este repositório reflete apenas um módulo de um _framework_ para visão computacional de drones. Esse módulo consiste na Detecção de Linhas de Plantação (_Crop Row Detection_) que pertence aos clientes do _framework_, a camada de mais alto nível dessa aplicação. A imagem abaixo ilustra todos os módulos de _software_ desse _framework_:
 
-![Arquitetura Geral do Software](/assets/pictures/general_software_architecture.png)
-
-**Figura 01: Arquitetura Geral de Software**
+<div align="center">
+	<img src="/assets/pictures/general_software_architecture.png" alt="software architecture" width="450"/>
+	<p><b>Figura 01: Arquitetura Geral de Software.</b></p>
+</div>
 
 O módulo abordado neste repositório é o _Crop Row Detection_ da imagem acima. Esse bloco contém as bibliotecas OpenCV e Raspicam, bem como o código de detecção, filtragem e seguidor de linhas de plantação. Além disso, para conexão com o drone, ela conta com um _encoder/decoder_ e um cliente _socket_. A imagem abaixo mostra bem essa descrição:
 
-![_Crop Row Detection Client_](/assets/pictures/crop_row_detection_client.png)
-
-**Figura 02: Cliente de Detecção de Linhas de Plantação**
+<div align="center">
+	<img src="/assets/pictures/crop_row_detection_client.png" alt="row detection" width="450"/>
+	<p><b>Figura 02: Cliente de Detecção de Linhas de Plantação.</b></p>
+</div>
 
 O algoritmo de operação desse cliente ilustrado abaixo:
 
-![_Crop Row Detection Operation Flow_](/assets/pictures/crop_row_detection_algorithm.png)
-
-**Figura 03: Fluxo de Operação do Detector de Linhas de Plantação**
+<div align="center">
+	<img src="/assets/pictures/crop_row_detection_algorithm.png" alt="detection algorithm" width="450"/>
+	<p><b>Figura 03: Fluxo de Operação do Detector de Linhas de Plantação.</b></p>
+</div>
 
 Informações mais detalhadas sobre a aplicação como um todo encontram-se na seção [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#cite-me).
 
@@ -42,16 +45,18 @@ Informações mais detalhadas sobre a aplicação como um todo encontram-se na s
 
 Na aplicação, foi utilizado o VANT 3DR Iris+ quadrotor, junto de uma câmera Raspberry Pi NOIR V1 Rev 1.3 com um filtro de gel azul para melhor filtrar as imagens das plantações, conectada com um gimbal Tarot T-2D V2. Essas partes podem ser vistas na imagem a seguir:
 
-![Drone e Câmera do Raspiberry Pi](/assets/pictures/drone_and_raspiberry_pi_camera.png)
-
-**Figura 04: VANT e Câmera do Raspiberry Pi**
+<div align="center">
+	<img src="/assets/pictures/drone_and_raspiberry_pi_camera.png" alt="drawing" width="450"/>
+	<p><b>Figura 04: VANT e Câmera do Raspiberry Pi.</b></p>
+</div>
 
 Foi utilizado o Raspberry Pi 3 modelo B como computador integrado, com um cartão SD classe 10 de 32 GB para armazenar o sistema operacional do microprocessador. Para garantir a alimentação e temporização do sistema, foram incorporados um conversor DC-DC e um módulo RTC. Para realizar a interface com o _hardware_ do drone, foi instalada a controladora de vôo Pixhawk Autopilot. Essa parte também é ilustrada na imagem a seguir:
 
-![Computador Integrado ao Drone](/assets/pictures/embedded_hardware_connections.png)
-
-**Figura 05: Computador Integrado ao VANT**
-
+<div align="center">
+	<img src="/assets/pictures/embedded_hardware_connections.png" alt="Computador Integrado ao Drone" width="450"/>
+	<p><b>Figura 05: Computador Integrado ao VANT.</b></p>
+</div>
+		
 ### _Software_
 
 Em relação à arquitetura de _software_, as Figuras 01, 02 e 03 do capítulo [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#descrição) ilustram bem como foi modelada esta aplicação. Não obstante, algumas descrições são devidas a essas imagens. O sistema operacional utilizado no projeto foi o Raspbian Stretch com interface GUI desabilitada para obter melhor performance. Os _drivers_ e as bibliotecas auxiliares relevantes já foram descritos brevemente junto da imagem. Vale a pena destacar que a versão da OpenCV utilizada é a 3.1.0 e para a Raspicam, uma versão customizada 0.1.6 para este projeto.
