@@ -63,8 +63,6 @@ Em relação à arquitetura de _software_, as Figuras 01, 02 e 03 do capítulo [
 
 Informações mais detalhadas sobre a aplicação como um todo encontram-se na seção [Cite-me](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#cite-me).
 
-Descreve o _setup_ de _hardware_ e sofware para reprodução dos experimentos. Por exemplo, sistema operacional utilizado e versão das bibliotecas.
-
 ## Passos para reproduzir
 
 Seguindo o [Setup](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#setup) e a [Descrição](https://github.com/LASCAR-USRL/plant-line-detection/tree/master#descrição) do repositório, deve-se baixar este repositório para alguma pasta do dispositivo e abrir um terminal na pasta do projeto ou acessar essa através de comandos de um terminal. Após isso, a execução do projeto dentro de um ambiente adequado é descrita abaixo:
